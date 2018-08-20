@@ -292,6 +292,7 @@ class CommandOverlay:
             "Shift": Xlib.X.ShiftMask,
             "Control": Xlib.X.ControlMask,
             "Alt": Xlib.X.Mod1Mask,
+            "AltGr": Xlib.X.Mod5Mask,
         }
 
         self.__available_modifier_state_mask = sum(self.__available_modifiers.values())

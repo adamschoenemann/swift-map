@@ -8,83 +8,109 @@
     "key": "CAPS",
     "mode": "hold",
     "mapping": [
+			{
+				"key_code": 43,
+				"mapped_key_label": "LEFT"
+			},
+			{
+				"key_code": 44,
+				"mapped_key_label": "DOWN"
+			},
+			{
+				"key_code": 45,
+				"mapped_key_label": "UP"
+			},
+			{
+				"key_code": 46,
+				"mapped_key_label": "RGHT"
+			},
+			{
+				"key_code": 32,
+				"mapped_keysym": "Escape"
+			},
+			{
+				"key_code": 53,
+				"mapped_key_label": "DELE"
+			},
+			{
+				"key_code": 58,
+				"mapped_keysym": "slash"
+			},
+			{
+				"key_code": 38,
+				"mapped_key_label": "END"
+			},
+			{
+				"key_code": 31,
+				"mapped_key_label": "HOME"
+			},
+			{
+				"key_code": 33,
+				"mapped_sequences": {
+          "down": [
+            { "key": "7", "modifiers": "AltGr" }
+          ],
+          "if_modifiers": {
+            "Alt": { "down": [{ "key": "8", "modifiers": "AltGr" }] }
+          }
+        }
+			},
+			{
+				"key_code": 34,
+				"mapped_sequences": {
+          "down": [
+            { "key": "0", "modifiers": "AltGr" }
+          ],
+          "if_modifiers": {
+            "Alt": { "down": [{ "key": "9", "modifiers": "AltGr" }] }
+          }
+        }
+			},
       {
-        "key_code": 16,
-        "mapped_keysym": "braceleft"
+        "key_code": 25,
+        "mapped_sequences": { 
+          "down": [{ "key": "Right", "modifiers": "Control" }] 
+        }
       },
       {
-        "key_code": 17,
-        "mapped_keysym": "bracketleft"
+        "key_code": 56,
+        "mapped_sequences": { 
+          "down": [{ "key": "Left", "modifiers": "Control" }] 
+        }
       },
       {
-        "key_code": 18,
-        "mapped_keysym": "bracketright"
-      },
-      {
-        "key_code": 19,
-        "mapped_keysym": "braceright"
-      },
-      {
-        "key_code": 20,
-        "mapped_keysym": "backslash"
+        "key_code": 39,
+        "mapped_sequences": { 
+          "down": [
+            { "key": "End" },
+            { "key": "Home", "modifiers": "Shift" }
+          ] 
+        }
       },
       {
         "key_code": 30,
         "mapped_key_label": "PGUP"
       },
       {
-        "key_code": 31,
-        "mapped_key_label": "UP"
-      },
-      {
-        "key_code": 32,
+        "key_code": 40,
         "mapped_key_label": "PGDN"
       },
       {
-        "key_code": 43,
-        "mapped_key_label": "HOME"
-      },
-      {
-        "key_code": 44,
-        "mapped_key_label": "LEFT"
-      },
-      {
-        "key_code": 45,
-        "mapped_key_label": "DOWN"
-      },
-      {
-        "key_code": 46,
-        "mapped_key_label": "RGHT"
-      },
-      {
-        "key_code": 47,
-        "mapped_key_label": "END"
-      },
-      {
-        "key_code": 11,
-        "mapped_sequences": {
+        "key_code": 36,
+        "mapped_sequences": { 
           "down": [
-            {"text": "\\glqq{} \\grqq{}"},
-            {"key": "Left", "times": 7}
-          ]
-        }
-      },
-      {
-        "key_code": 12,
-        "mapped_sequences": {
-          "down": [
-            {"text": "\\flqq{} \\frqq{}"},
-            {"key": "Left", "times": 7}
-          ]
-        }
-      },
-      {
-        "key_code": 38,
-        "mapped_sequences": {
-          "down": [
-            {"text": "\\par{}"},
-            {"key": "Down", "times": 1}
-          ]
+            { "key": "End" },
+            { "key": "Return" }
+          ],
+          "if_modifiers": {
+            "Alt": {
+              "down": [
+                { "key": "Home" },
+                { "key": "Return" },
+                { "key": "Up" }
+              ] 
+            }
+          }
         }
       }
     ]
